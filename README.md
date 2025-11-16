@@ -27,8 +27,3 @@ A full-stack note-taking application built with **React**, **Node.js**, **Expres
 - React Router DOM  
 - Context API for state management  
 - Tailwind CSS for styling  
-
----
-
-## **Folder Structure**
-
