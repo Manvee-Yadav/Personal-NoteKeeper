@@ -1,0 +1,39 @@
+
+### Create a new note
+POST http://localhost:4001/notes/create
+Content-Type: application/json
+
+{
+  "heading": "Web Development",
+  "sections": [
+    { "subheading": "HTML", "content": "Learn basics of HTML" },
+    { "subheading": "CSS", "content": "Learn basics of Cds" }
+  ]
+}
+
+### Get all notes
+GET http://localhost:4001/notes
+
+### Search notes by keyword
+GET http://localhost:4001/notes/search/cds
+
+### Update a note by ID
+PUT http://localhost:4001/notes/68d2940af04a776ea4fc33b9
+Content-Type: application/json
+
+{
+  "heading": "Updated Web Dev",
+  "sections": [
+    { "subheading": "HTML", "content": "Updated HTML content" }
+  ]
+}
+
+### Delete a note by ID
+DELETE http://localhost:4001/notes/68d2940af04a776ea4fc33b9
+
+### generate quiz
+POST http://localhost:4001/noteapp/generate-quiz/6743c1d2a18c9f1aa55b7f12
+
+
+### flashcard
+POST http://localhost:4001/noteapp/generate-flashcards/6743c1d2a18c9f1aa55b7f12
