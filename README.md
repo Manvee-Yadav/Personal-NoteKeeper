@@ -1,7 +1,9 @@
 # 📝 Personal NoteKeeper: The AI-Powered Study Assistant ✨
 
 ## Overview
-**Personal NoteKeeper** is a secure, full-stack web application designed to help students and professionals manage their study notes effectively while leveraging Generative AI to accelerate learning. Beyond simple note-taking, it features a custom AI Chatbot that can summarize notes, explain complex concepts, and generate quizzes based solely on the user's saved content.
+**Personal NoteKeeper** is a secure, full-stack web application designed to help students and professionals manage their study notes efficiently while leveraging Generative AI to enhance learning. Beyond simple note-taking, it features a custom AI Chatbot that can summarize notes, explain complex concepts, and generate quizzes based only on the user's saved content.
+
+Additionally, the app includes an interactive Flashcards module, allowing users to review content in a spaced repetition format — showing the content when clicked and moving to the next flashcard on demand. This project demonstrates full-stack development with the MERN stack and integration of third-party APIs like the Google Gemini API for AI-powered features.
 
 This project uses the **MERN stack** (MongoDB, Express, React, Node.js) and demonstrates integrating third-party APIs (like Google Gemini) into a user authentication system.
 
@@ -14,7 +16,7 @@ This project uses the **MERN stack** (MongoDB, Express, React, Node.js) and demo
 - **AI Chatbot**: Context-aware chatbot powered by Gemini 2.5 Flash API.  
 - **Contextual Q&A**: Answers questions based only on the user's saved notes.  
 - **Study Tools**: Generates summaries, explanations, and 5-question multiple-choice quizzes on specific topics.  
-- **Flashcards (Planned)**: Upcoming feature for spaced repetition and recall.  
+- **Flashcards**: An interactive feature that displays content on click and shows the next flashcard when prompted, supporting spaced repetition and recall.
 
 ---
 
@@ -91,4 +93,5 @@ User Question	Chatbot Action
 
 🤝 Contributing
 Contributions are welcome! If you find a bug or have an improvement idea, please open an issue or submit a pull request.
+
 
