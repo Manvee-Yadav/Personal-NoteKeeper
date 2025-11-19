@@ -18,7 +18,8 @@ const noteSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
-  sections: [sectionSchema] // array of subheadings + content
+  sections: [sectionSchema], // array of subheadings + content
+  user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }
 }, {
   timestamps: true
 });
