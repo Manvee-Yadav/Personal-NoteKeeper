@@ -36,17 +36,18 @@ function Chatbot() {
   };
 
   return (
-    <div className="p-6 bg-gray-900 text-white rounded-xl max-w-lg mx-auto">
-      <h2 className="text-xl font-bold mb-4">AI Chatbot</h2>
+    <div className="p-8 bg-gray-900 text-white rounded-xl max-w-3xl mx-auto shadow-2xl mt-10">
+      <h2 className="text-2xl font-bold mb-6 text-center">AI Chatbot</h2>
 
-      <div className="h-64 overflow-y-auto p-3 bg-gray-800 rounded-lg mb-4">
+      {/* Chat Window */}
+      <div className="h-[500px] overflow-y-auto p-4 bg-gray-800 rounded-lg mb-6 border border-gray-700">
         {messages.map((msg, i) => (
           <div
             key={i}
-            className={`p-2 my-2 rounded-lg ${
+            className={`p-3 my-3 rounded-lg max-w-[80%] ${
               msg.sender === "user"
-                ? "bg-blue-600 self-end"
-                : "bg-green-600"
+                ? "bg-blue-600 ml-auto text-right"
+                : "bg-green-600 mr-auto text-left"
             }`}
           >
             {msg.text}
@@ -54,16 +55,17 @@ function Chatbot() {
         ))}
       </div>
 
-      <div className="flex gap-2">
+      {/* Input Area */}
+      <div className="flex gap-3">
         <input
-          className="flex-1 p-2 bg-gray-700 rounded-lg"
+          className="flex-1 p-3 bg-gray-700 rounded-lg border border-gray-600 focus:ring-2 focus:ring-blue-500 outline-none"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask something..."
         />
         <button
           onClick={sendMessage}
-          className="px-4 bg-blue-500 hover:bg-blue-600 rounded-lg"
+          className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold transition"
         >
           Send
         </button>

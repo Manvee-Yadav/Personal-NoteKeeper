@@ -7,6 +7,7 @@ import Createnote from './pages/Createnote';
 import FlashcardsPage from "./pages/FlashcardsPage";
 import Chatbot from './components/Chatbot';
 import AuthPopup from "./components/AuthPopup";
+import FullNote from "./pages/FullNote";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(false);
@@ -20,6 +21,7 @@ function App() {
       <main className='flex-1 container mx-auto p-4'>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/note/:id" element={<FullNote />} />
           <Route path="/create" element={<Createnote />} />
           <Route path="/flashcards" element={<FlashcardsPage />} />
           <Route path="/chatbot" element={<Chatbot />} />
